@@ -1,0 +1,152 @@
+.dish {
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    position: relative;
+    &:not(:last-child) {
+        margin: 0 48px 0 0;
+    }
+    &__image {
+        max-width: 360px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__discription {
+        max-width: 360px;
+        margin: 35px 0 0 0;
+        text-align: left;
+    }
+    &__thirt-heading {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+    &__paragraph {
+        font-size: 0.72rem;
+        margin: 15px 0;
+    }
+    &__price {
+        font-size: 0.72rem;
+        font-weight: 700;
+    }
+}
+
+.dish--red::before {
+    @include stiker ("hot!", $first-sticker-color);
+}
+
+.dish--green::before {
+    @include stiker ("new!", $second-sticker-color);
+}
+
+.dish--yellow::before {
+    @include stiker ("hit!", $third-sticker-color);
+}
+
+@media screen and (max-width: 1024px) {
+    .dish {
+        max-width: 252px;
+        &:not(:last-child) {
+            margin: 0 92px 0 0;
+        }
+        &__image {
+            max-width: 252px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__discription {
+            margin: 15px 0 0 0;
+        }
+        &__thirt-heading {
+            font-size: 1rem;
+        }
+        &__paragraph {
+            font-size: 0.6rem;
+            margin: 15px 0;
+        }
+        &__price {
+            font-size: 0.6rem;
+        }
+    }
+    .dish--red::before {
+        @include min-stiker ("hot!", $first-sticker-color);
+    }
+    .dish--green::before {
+        @include min-stiker ("new!", $second-sticker-color);
+    }
+    .dish--yellow::before {
+        @include min-stiker ("hit!", $third-sticker-color);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dish {
+        max-width: 692px;
+        flex-direction: row;
+        position: relative;
+        &:not(:last-child) {
+            margin: 0 0 58px 0;
+        }
+        &__image {
+            max-width: 320px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &__discription {
+            max-width: 348px;
+            margin: 0 0 0 24px;
+            padding: 19px 0 14px;
+            text-align: left;
+        }
+        &__paragraph {
+            font-size: 0.8rem;
+            margin: 20px 0;
+        }
+        &__price {
+            font-size: 0.8rem;
+        }
+    }
+    .dish--red::before {
+        @include medium-stiker ("hot!", $first-sticker-color);
+    }
+    .dish--green::before {
+        @include medium-stiker ("new!", $second-sticker-color);
+    }
+    .dish--yellow::before {
+        @include medium-stiker ("hit!", $third-sticker-color);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .dish {
+        flex-direction: column;
+        &__image {
+            max-width: 692px;
+        }
+        &__discription {
+            max-width: 692px;
+            margin: 15px 0 0 0;
+            padding: 0;
+        }
+        &__paragraph {
+            margin: 15px 0;
+        }
+    }
+    .dish--red::before {
+        @include min-stiker ("hot!", $first-sticker-color);
+    }
+    .dish--green::before {
+        @include min-stiker ("new!", $second-sticker-color);
+    }
+    .dish--yellow::before {
+        @include min-stiker ("hit!", $third-sticker-color);
+    }
+}

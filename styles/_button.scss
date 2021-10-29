@@ -1,0 +1,26 @@
+.button--white {
+    @include button ($second-text-color, $button-color);
+    transition: background-color .3s, border-color .3s;
+}
+
+.button--white:hover {
+    background-color: $accent-color;
+    border-color: $accent-color;
+}
+
+.button--white:active {
+    background-color: transparent;
+    border-color: $main-text-color;
+    color: $second-button-color;
+}
+
+.button--black {
+    @include button ($main-text-color, $second-button-color);
+    transition: background-color .3s, border-color .3s, color .2s;
+}
+
+.button--black:hover {
+    background-color: $accent-color;
+    border-color: $accent-color;
+    color: $button-color;
+}

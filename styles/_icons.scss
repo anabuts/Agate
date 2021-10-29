@@ -1,0 +1,18 @@
+.icons {
+    display: flex;
+    justify-content: center;
+    &__item {
+        @include icon;
+    }
+    &__item:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .icons {
+        &__item:not(:last-child) {
+            margin-right: 15px;
+        }
+    }
+}
