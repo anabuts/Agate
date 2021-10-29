@@ -1,0 +1,61 @@
+@mixin button ($tx-color, $bd-color) {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    border: 2px solid;
+    border-radius: 30px;
+    max-width: 312px;
+    color: $tx-color;
+    border-color: $bd-color;
+    margin: 0 auto;
+}
+
+@mixin stiker ($content, $bd-color) {
+    content: $content;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    display: block;
+    background-color: $bd-color;
+    color: $second-text-color;
+    position: absolute;
+    top: -29px;
+    left: -29px;
+    line-height: 58px;
+    font-size: 0.56rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@mixin medium-stiker ($content, $bd-color) {
+    width: 56px;
+    height: 56px;
+    top: -28px;
+    left: -28px;
+    line-height: 56px;
+}
+
+@mixin min-stiker ($content, $bd-color) {
+    width: 46px;
+    height: 46px;
+    top: -23px;
+    left: -23px;
+    line-height: 46px;
+    font-size: 0.48rem;
+}
+
+@mixin icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: $footer-color;
+}

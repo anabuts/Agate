@@ -1,0 +1,27 @@
+.our-pluses {
+    background-color: $section-color;
+    &__text {
+        font-size: 1.2rem;
+        line-height: 1.358em;
+        max-width: 941px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .our-pluses {
+        &__text {
+            font-size: 0.88rem;
+            max-width: 602px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .our-pluses {
+        &__text {
+            font-size: 0.8rem;
+            max-width: 541px;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.up::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-image: url(../icons/Up.svg);
+    z-index: 1000;
+}

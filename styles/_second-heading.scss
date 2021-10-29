@@ -1,0 +1,16 @@
+.second-heading {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    .second-heading {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .second-heading {
+        font-size: 1.2rem;
+    }
+}
