@@ -1,0 +1,29 @@
+.footer {
+    padding: 100px 0;
+    background-color: $footer-color;
+    color: $second-text-color;
+    &__time {
+        color: $fourth-text-color;
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 80px 0;
+    }
+    &__time {
+        font-size: 0.8rem;
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 70px 0;
+    }
+    &__time {
+        font-size: 0.72rem;
+        margin-bottom: 40px;
+    }
+}

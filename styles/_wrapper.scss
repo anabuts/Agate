@@ -1,0 +1,17 @@
+.wrapper {
+    max-width: 1205px;
+    margin: 0 auto;
+    font-size: 0px;
+}
+
+@media screen and (max-width: 1270px) {
+    .wrapper {
+        padding: 0 40px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .wrapper {
+        padding: 0 30px;
+    }
+}
